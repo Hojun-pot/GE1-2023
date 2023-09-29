@@ -20,6 +20,8 @@ Join the class on the World Videophone using the following link:
 * Email: bryan.duggan@tudublin.ie
 * [My website & other ways to contact me](http://bryanduggan.org)
 
+- [Discord](https://discord.gg/vQEgsb4E)
+
 ## Week 2 - Learning Godot
 - [Trigonometry Problem Set](https://1.cdn.edl.io/IDqRlI8C9dRkoqehbbdHBrcGT6m87gkCQuMKTkp0U7JvHvuG.pdf)
 
