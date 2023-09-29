@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://dkkqv2q7rcfq4"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Node3D" type="Node3D" parent="."]
+
+[node name="tank" type="CharacterBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="tank"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="tank"]
+
+[node name="turret" type="CharacterBody3D" parent="tank"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="tank/turret"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="tank/turret"]
+
+[node name="ground" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ground"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ground"]
