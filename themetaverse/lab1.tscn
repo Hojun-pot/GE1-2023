@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://baufgtrei14cx"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_75547"]
+subdivide_width = 3
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_duyss"]
+size = Vector2(5000, 5000)
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_2ff2s"]
+albedo_color = Color(0.192157, 0.105882, 0.117647, 0)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="ShapeCast3D" type="ShapeCast3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.71276, 3.12997, 4.71451)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ShapeCast3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ShapeCast3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.98359, -0.432752, 0)
+mesh = SubResource("BoxMesh_75547")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.601879, -3.4945, 1.54636)
+mesh = SubResource("PlaneMesh_duyss")
+surface_material_override/0 = SubResource("ORMMaterial3D_2ff2s")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]

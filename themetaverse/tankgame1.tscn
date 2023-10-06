@@ -1,10 +1,10 @@
-[gd_scene load_steps=13 format=3 uid="uid://r7gg3dyc3t6i"]
+[gd_scene load_steps=13 format=3 uid="uid://b1ki121e25u1e"]
 
-[ext_resource type="Material" uid="uid://cpg5h3e60f4bg" path="res://green.tres" id="1_4wjot"]
+[ext_resource type="Material" path="res://green.tres" id="1_4wjot"]
 [ext_resource type="Script" path="res://tank1.gd" id="2_n83ob"]
 [ext_resource type="Material" path="res://Tank Material.tres" id="2_y21kj"]
 [ext_resource type="Script" path="res://wall.gd" id="3_rwbqd"]
-[ext_resource type="PackedScene" uid="uid://c6xhwirvnwrnp" path="res://brick.tscn" id="4_rtrnv"]
+[ext_resource type="PackedScene" path="res://brick.tscn" id="4_rtrnv"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_n5np4"]
 
@@ -27,6 +27,7 @@ albedo_color = Color(0, 0, 1, 1)
 transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="ground"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0165566, -0.00363636, -0.00266119)
 mesh = SubResource("PlaneMesh_n5np4")
 surface_material_override/0 = ExtResource("1_4wjot")
 
@@ -41,6 +42,7 @@ script = ExtResource("2_n83ob")
 shape = SubResource("BoxShape3D_i018l")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="tank"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0347748, 1.5249, 1.61696)
 mesh = SubResource("BoxMesh_0b5tn")
 surface_material_override/0 = SubResource("StandardMaterial3D_ocwap")
 
