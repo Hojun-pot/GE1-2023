@@ -13,6 +13,7 @@ extends CharacterBody3D
 # var b = "text"
 
 func _drawGizmos():
+
 	pass
 
 # Called when the node enters the scene tree for the first time.
