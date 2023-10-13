@@ -15,7 +15,8 @@ func _process(delta):
 
 
 func _on_RigidBody_body_entered(body):
-	if (body.name == "bullet"):
-		print("Collided with: "  + str(body))
-		body.queue_free()
+	pass
+	# if (body.name == "bullet"):
+		# print("Collided with: "  + str(body))
+		# body.queue_free()
 		# body.get_parent().remove_child(body)
