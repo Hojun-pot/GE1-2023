@@ -15,6 +15,10 @@ run/main_scene="res://tankGame.tscn"
 config/features=PackedStringArray("4.1", "Mobile")
 config/icon="res://icon.svg"
 
+[autoload]
+
+XRToolsUserSettings="*res://addons/godot-xr-tools/user_settings/user_settings.gd"
+
 [display]
 
 window/size/viewport_width=1024
@@ -22,7 +26,7 @@ window/size/viewport_height=768
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/gdscript_input_field/plugin.cfg")
+enabled=PackedStringArray()
 
 [input]
 
@@ -63,14 +67,11 @@ move_down={
 "events": []
 }
 
-[physics]
-
-3d/default_gravity=0.0
-
 [rendering]
 
 renderer/rendering_method="mobile"
 textures/vram_compression/import_etc2_astc=true
+anti_aliasing/quality/msaa_3d=2
 
 [xr]
 
