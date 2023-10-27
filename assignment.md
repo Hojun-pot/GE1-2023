@@ -43,7 +43,7 @@ Some ideas:
 - Toy soldiers that come to life
 - Give yourself a superpower. Any superpower
 - A harry potter style book or picture that comes to life
-- AN programmable robot companion
+- A programmable robot companion
 - An octopus in a tank
 - A working Star Trek transporter
 - A futuristic metaverse manipulation device with lots of lights and moving parts
@@ -86,7 +86,7 @@ You can work solo or on a team of up to three people.
 
 | Grade | Indicative Aspects |
 |-------|------------|
-| 1     | Project is deployed to the Quest and has great framerate. It looks amazing with a high level of polish on the visuals. Great use of color and form. The object is fully usable in VR and AR. There is lots of functionality and interactivity - for example buttons to press, levers to turn, colors changing, movement, animation etc. Lots of novelty and nostalgia. Use of visual effects such as particle system, post-processing or custom shaders to enhance visual quality. Has a clear visual style. Has great sound effects. Is very cool indeed. Super cool in fact. Special gold star, like Joe 90! |
+| 1     | Project is deployed to the Quest and has great framerate. It looks amazing with a high level of polish on the visuals. Great use of color and form. The object is fully usable in VR and AR. There is lots of functionality and interactivity - for example buttons to press, levers to turn, colors changing, movement, animation etc. Lots of novelty and originality. Use of visual effects such as particle system, post-processing or custom shaders to enhance visual quality. Has a clear visual style. Has great sound effects. Is very cool indeed. Super cool in fact. Special gold star, like Joe 90! |
 | 2.1 | Maybe deployed to the Quest but has some glitches or runs just on PC not in AR. Looks pretty good with decent but simple self made models made in ProBuilder or Blender. No visual effects. Maybe a particle system. Sound effects grabbed from online sources. Some simple interactivity and button presses. Less coherent visual style. Good novelty value. |
 | 2.2 |  One or two simple models made in ProBuilder or imported from online sources. No interactivity, just an animated visual. Running in the Unity editor. Little or no sound |
 | Pass | Model from online source or primitive that does not do anything |

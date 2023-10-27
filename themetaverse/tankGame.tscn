@@ -1,9 +1,10 @@
-[gd_scene load_steps=28 format=3 uid="uid://bsd26l7esfabd"]
+[gd_scene load_steps=29 format=3 uid="uid://bsd26l7esfabd"]
 
 [ext_resource type="Script" path="res://Start_XR.gd" id="1_8q0sy"]
 [ext_resource type="Script" path="res://FPController.gd" id="1_sbaxy"]
 [ext_resource type="Script" path="res://wall.gd" id="2"]
 [ext_resource type="Environment" path="res://seek_environment..tres" id="2_jagpw"]
+[ext_resource type="Script" path="res://aitank3.gd" id="2_kf0ds"]
 [ext_resource type="Material" uid="uid://cucxxprp61myx" path="res://aitankmaterial.tres" id="2_x2tpc"]
 [ext_resource type="PackedScene" uid="uid://bsmshwh5fdw1y" path="res://Box.tscn" id="4"]
 [ext_resource type="Script" path="res://TrailRender.gd" id="4_3h56a"]
@@ -48,6 +49,8 @@ script = ExtResource("1_8q0sy")
 [node name="aiTank" type="CharacterBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0.5, -0.042)
 motion_mode = 1
+script = ExtResource("2_kf0ds")
+speed = 5.0
 
 [node name="tankMesh" type="MeshInstance3D" parent="aiTank"]
 mesh = SubResource("1")
@@ -74,12 +77,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.625, 1)
 shape = SubResource("BoxShape3D_w0fv0")
 
 [node name="Player" type="RigidBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.85944, -9.47485)
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 15.5116, 1.84412)
 axis_lock_linear_x = true
 axis_lock_linear_y = true
 axis_lock_linear_z = true
-script = ExtResource("1_sbaxy")
-speed = 10.0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
 shape = SubResource("SphereShape3D_ng4vm")
@@ -165,7 +166,7 @@ skeleton = NodePath("../..")
 surface_material_override/0 = ExtResource("5_m2ykm")
 
 [node name="tank" type="CharacterBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, -0.021)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.5, 4.979)
 motion_mode = 1
 script = ExtResource("7_3p3kj")
 rotSpeed = 3.0

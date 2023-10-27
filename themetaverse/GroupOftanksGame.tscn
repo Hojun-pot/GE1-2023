@@ -1,6 +1,7 @@
-[gd_scene load_steps=29 format=3 uid="uid://h0lqkymsxc1x"]
+[gd_scene load_steps=31 format=3 uid="uid://h0lqkymsxc1x"]
 
 [ext_resource type="Script" path="res://root.gd" id="1_3jv87"]
+[ext_resource type="Texture2D" uid="uid://bph6nmvqh3pws" path="res://addons/kenney_particle_pack/muzzle_04.png" id="2_dwtm0"]
 [ext_resource type="Script" path="res://FPController.gd" id="2_yily8"]
 [ext_resource type="Environment" path="res://seek_environment..tres" id="3_loph3"]
 [ext_resource type="Script" path="res://jet.gd" id="4_3dkdw"]
@@ -30,8 +31,13 @@ initial_velocity_max = 10.0
 scale_curve = SubResource("CurveTexture_q1e0q")
 color = Color(1, 1, 0, 1)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a5xqw"]
+transparency = 1
+albedo_color = Color(1, 0, 0, 1)
+albedo_texture = ExtResource("2_dwtm0")
+
 [sub_resource type="QuadMesh" id="QuadMesh_tacch"]
-size = Vector2(0.1, 0.1)
+material = SubResource("StandardMaterial3D_a5xqw")
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_tfhgs"]
 
@@ -93,7 +99,7 @@ tracker = &"left_hand"
 [node name="jet" type="Node3D" parent="Player/XROrigin3D/XRController3D"]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
 script = ExtResource("4_3dkdw")
-power = 500
+power = 300
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Player/XROrigin3D/XRController3D/jet"]
 mesh = SubResource("CapsuleMesh_bg0vs")
@@ -104,7 +110,15 @@ surface_material_override/0 = ExtResource("12_qfb0c")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.48393, 0, 0)
 tracker = &"right_hand"
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Player/XROrigin3D/XRController3D2"]
+[node name="jet" type="Node3D" parent="Player/XROrigin3D/XRController3D2"]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
+script = ExtResource("4_3dkdw")
+power = 300
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Player/XROrigin3D/XRController3D2/jet"]
+mesh = SubResource("CapsuleMesh_bg0vs")
+skeleton = NodePath("../..")
+surface_material_override/0 = ExtResource("12_qfb0c")
 
 [node name="SceneSwitcher" parent="." instance=ExtResource("6_slgkm")]
 
